@@ -1,0 +1,24 @@
+:root {
+	--black: #000;
+	--dark-white: #fff;
+    --gray: #aaa;
+    --yellow: #cc0;
+    --red: #d00;
+}
+
+body { background-color: var(--gray); margin: 0px; }
+
+.loja { background-color: var(--yellow); height: 25%; z-index: 99; }
+
+#logo { max-height: 4rem; }
+
+.nav-link { margin: 5px; color: var(--black); text-decoration: none; }
+.nav-link:hover { color: var(--dark-white); }
+
+input { margin: 0% 15%; }
+
+img { max-height: 28rem; }
+
+.sr-only { color: var(--red); }
+
+aside { float: right; }
