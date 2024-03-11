@@ -16,61 +16,69 @@
     </head>
     <body>
         <nav class="navbar loja">
-            <input class=form-control id=pesquisa placeholder="Pesquise...">
+            <input type="search" class=form-control id=pesquisa placeholder="Pesquise...">
             <img src=img/suamarca.png class=nav-brand alt="Sua marca" id=logo>
             <div class="navbar item">
-                <a class=nav-link href=#>Inicio</a>
+                <a class=nav-link href=index.html>Inicio</a>
                 <a class=nav-link href=#>Entrar</a></div>
         </nav>
-        <form class="usuario-registro">
-            <div id="form-control">
-                <label for="nome">Seu nome:</label>
-                <input class=form-control id="nome">
-                <label for="email">Seu email:</label>
-                <input class=form-control id="estado">
-                <label for="estado">Estado:</label>
-                <input class=form-control id="rua">
-                <label for="rua">Rua:</label>
-                <input type="email" class=form-control id="email">
-                <label for="cpf">Seu CPF:</label>
-                <input type="number" class=form-control id="cpf">
-                <label for="cnpj">Seu CNPJ:</label>
-                <input class=form-control id="cnpj">
-                <label for="senha">Crie uma senha:</label>
-                <input class=form-control type="password" id="senha">
-
-                <div id="buttons">
-                    <button class="btn-primary" type="submit">Enviar</button>
-                    <button class="btn" type="reset">Limpar</button>
+        <form id="dados">
+            <div id="lados">
+                <div id="esquerdo">
+                    <label for="nome">Seu nome:</label>
+                    <input class=form-control id="nome" required>
+                    <label for="email">Seu email:</label>
+                    <input class=form-control id="email" required>
+                    <label for="cpf">Seu CPF:</label>
+                    <input class=form-control id="cpf">
+                    <label for="cnpj">Seu CNPJ:</label>
+                    <input class=form-control id="cnpj">
+                    <label for="senha">Crie uma senha:</label>
+                    <input class=form-control type="password" id="senha" required>
+                </div>
+                <div id="direito">
+                    <label for="estado">Estado:</label>
+                    <input class=form-control id="estado" required>
+                    <label for="bairro">Bairro:</label>
+                    <input class=form-control id="bairro" required>
+                    <label for="rua">Rua:</label>
+                    <input class=form-control id="rua" required>
                 </div>
             </div>
-        </form>
+            <div id="buttons">
+                <button class="btn-primary" type="submit">Enviar</button>
+                <button class="btn-secondary" type="reset">Limpar</button>
+            </div>
+            </form>
+        </div>
         <footer>
-            <hr>
-            <div>
-                <img src=img/suamarca.png alt="Logo da loja">
-                <span>© 2021</span>
-            </div>
-            <div id="inicio">
-                <h2>Inicio</h2>
-                <a href="index.html">Home</a>
-            </div>
-            <div id=sobre>
-                <h2>Sobre</h2>
-                <a href="#">Informações da loja</a>
-                <a href="#">Blog</a>
-            </div>
-            <div id=suporte>
-                <h2>Suporte</h2>
-                <a href="#">Contato</a>
-            </div>
-            <div id="social">
-                <h2>Social</h2>
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">Linkedin</a>
-                <a href="#">Twitter</a>
+            <div id="topics">
+                <hr>
+                <div class="subtopics" id="logo">
+                    <img width=150 src=img/suamarca.png alt="Logo da loja">
+                    <span>© 2021</span>
+                </div>
+                <div class="subtopics" id="inicio">
+                    <h2>Inicio</h2>
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="subtopics" id=sobre>
+                    <h2>Sobre</h2>
+                    <a href="#">Informações da loja</a>
+                    <a href="#">Blog</a>
+                </div>
+                <div class="subtopics" id=suporte>
+                    <h2>Suporte</h2>
+                    <a href="#">Contato</a>
+                </div>
+                <div class="subtopics" id="social">
+                    <h2>Social</h2>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Linkedin</a>
+                    <a href="#">Twitter</a>
+                </div>
             </div>
         </footer>
     </body>
-    
+</html>

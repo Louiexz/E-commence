@@ -1,40 +1,50 @@
 :root {
 	--black: #000;
-	--dark-white: #fff;
+	--white: #fff;
     --gray: #aaa;
+    --light-gray: #bbb;
     --yellow: #cc0;
     --red: #d00
 }
-body { background-color: var(--gray); margin: 0px }
-
-.loja { background-color: var(--yellow); height: 25%; z-index: 99 }
-
-#logo { max-height: 4rem }
-.nav-link {
-    margin: 5px;
+body { margin: 0px
+}
+a { text-decoration: none;
+    display: block;
+    clear: both
+}
+.loja { background-color: var(--yellow);
+    height: 25%;
+    z-index: 99
+}
+#logo { max-height: 4rem
+}
+.nav-link { margin: 5px;
     color: var(--black);
     text-decoration: none
 }
-.nav-link:hover { color: var(--dark-white) }
-
-#pesquisa { margin: 0% 15% }
-
-img { max-height: 28rem;}
-
-.sr-only { color: var(--red) }
-
-aside { float: right; }
-#usuario-registro {
-    margin: 5%;
-    background-color: var(--gray)
+.nav-link:hover { color: var(--white)
 }
-#buttons {
-    display: grid;
-    grid-template-rows: auto auto
+.nav-link, #dados { margin: 10px;
 }
-footer {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    padding: 5%;
-    background-color: var(--gray)
+#pesquisa { margin: 0% 15%
+}
+img { max-height: 28rem
+}
+.sr-only { color: var(--red)
+}
+aside { float: right
+}
+#dados { margin: 3%;
+    background-color: var(--light-gray);
+}
+#lados, #buttons { padding: 3% }
+.form-control { width: 90% }
+#buttons, #lados, #topics { display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly
+}
+#topics { padding-top: 30px;
+    background-color: var(--light-gray)
+}
+#buttons { justify-content: center
 }
