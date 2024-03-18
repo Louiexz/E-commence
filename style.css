@@ -35,17 +35,19 @@ img { max-height: 28rem
 aside { float: right
 }
 #dados { margin: 3%;
-    padding: 3%;
+    padding: 5%;
     background-color: var(--light-gray);
 }
 .form-control, label, #area-senha { margin: 1.5% 5%;
     width: 90%
 }
-#buttons, #lados { grid-template-columns: auto auto; }
-#buttons, #lados, #topics { display: grid }
+#buttons, #lados { grid-template-columns: auto auto }
+#buttons, #lados, #topics { display: grid;
+    grid-gap: 20px
+}
 #topics { padding-top: 30px;
-    grid-template-columns: 0fr auto auto auto auto auto;
-    background-color: var(--light-gray)
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    background-color: var(--light-gray);
 }
 #buttons { justify-content: center
 }
