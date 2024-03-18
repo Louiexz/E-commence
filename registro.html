@@ -22,19 +22,15 @@
                 <a class=nav-link href=index.html>Inicio</a>
                 <a class=nav-link href=#>Entrar</a></div>
         </nav>
-        <form id="dados">
+        <form id="dados" autocomplete="on">
             <div id="lados">
                 <div id="esquerdo">
-                    <label for="nome">Seu nome:</label>
+                    <label for="nome">Nome:</label>
                     <input class=form-control id="nome" required>
-                    <label for="email">Seu email:</label>
+                    <label for="email">Email:</label>
                     <input class=form-control id="email" required>
-                    <label for="cpf">Seu CPF:</label>
-                    <input class=form-control id="cpf">
-                    <label for="cnpj">Seu CNPJ:</label>
-                    <input class=form-control id="cnpj">
-                    <label for="senha">Crie uma senha:</label>
-                    <input class=form-control type="password" id="senha" required>
+                    <label for="cpf">CPF/CNPJ:</label>
+                    <input class=form-control id="cpf/cnpj" required>
                 </div>
                 <div id="direito">
                     <label for="estado">Estado:</label>
@@ -45,6 +41,8 @@
                     <input class=form-control id="rua" required>
                 </div>
             </div>
+            <div id="area-senha"><label for="senha">Senha:</label>
+            <input class=form-control type="password" id="senha" required>
             <div id="buttons">
                 <button class="btn-primary" type="submit">Enviar</button>
                 <button class="btn-secondary" type="reset">Limpar</button>
