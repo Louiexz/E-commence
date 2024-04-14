@@ -1,0 +1,19 @@
+#login {
+    display: none;
+    position: absolute;
+    background-color: var(--gray);
+    top: 75%;
+    right: 0px;
+    width: auto;
+    padding: 10px;
+    border-radius: 6px;
+}
+#text-login {
+    text-align: center;
+}
+.btn-primary, .btn-primary:hover {
+    background-color: var(--light-blue)
+}
+.btn-primary:active {
+    background-color: var(--blue)
+}
