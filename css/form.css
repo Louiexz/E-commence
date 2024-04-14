@@ -1,7 +1,8 @@
 #data {
-    margin: 5%;
+    margin: 5% 10%;
     padding: 5%;
     background-color: var(--white);
+    min-height: 100vh;
 }
 
 .form-control, label, #area-senha {
@@ -9,8 +10,8 @@
     width: 90%
 }
 
-.buttons, #sides {
-    grid-template-columns: auto auto
+.buttons {
+    grid-template-columns: auto auto;
 }
 
 .buttons {
