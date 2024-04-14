@@ -4,7 +4,7 @@ export class SearchEngine {
     }
 
     searchProduct() {
-        fetch("js/text/products.json")
+        fetch("../js/text/products.json")
             .then(response => response.json())
             .then(data => {
                 if (data && data.Electronics && data.Electronics.length > 0) {
