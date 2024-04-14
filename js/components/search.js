@@ -28,7 +28,7 @@ export class SearchEngine {
                         let productsString = JSON.stringify(foundProducts);
     
                         // Navegar para a outra página passando a lista de produtos encontrados como um parâmetro
-                        window.location.href = './../produtos.html?products=' + encodeURIComponent(productsString);
+                        window.location.href = '../produtos.html?products=' + encodeURIComponent(productsString);
     
                     } else {
                         window.alert('Sem produtos desse modelo!');
