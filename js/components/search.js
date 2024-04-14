@@ -28,7 +28,7 @@ export class SearchEngine {
                         localStorage.setItem('foundProducts', JSON.stringify(foundProducts));
     
                         // Navegar para a outra página de produtos
-                        window.location.href = '../produtos.html';
+                        window.location.href = 'produtos.html';
     
                     } else {
                         window.alert('Sem produtos desse modelo!');
