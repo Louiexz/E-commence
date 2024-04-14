@@ -1,12 +1,12 @@
+#data {
+    margin: 5%;
+    padding: 5%;
+    background-color: var(--white);
+}
+
 .form-control, label, #area-senha {
     margin: 1% 5%;
     width: 90%
-}
-
-#data {
-    margin: 3%;
-    padding: 5%;
-    background-color: var(--light-gray);
 }
 
 .buttons, #sides {

@@ -1,15 +1,17 @@
 .product_box {
-    background-color: #eee;
+    background-color: var(--white);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: solid black 2px;
-    padding: 5% 10%;
-    gap: 20px;
+    flex-direction: row;
+    padding: 1%;
+    gap: 0px 40px;
+    margin-bottom: 15px;
+    border-radius: 4px;
 }
 .product_box img {
-    width: 100%;
+    width: 40%;
     height: 50vh;
     object-fit: cover;
+}
+.price {
+    font-size: 120%;
 }

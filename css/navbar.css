@@ -19,7 +19,3 @@
     color: var(--black);
     text-decoration: none
 }
-
-.nav-link:hover {
-    color: var(--white)
-}

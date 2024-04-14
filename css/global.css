@@ -1,15 +1,16 @@
 :root {
     --black: #000;
-    --white: #fff;
-    --gray: hsl(0, 0%, 43%);
-    --light-gray: #bbb;
+    --white: #f3f3f3;
+    --gray: hsl(0, 0%, 81%);
     --blue: #07bf;
     --light-blue: #07df;
-    --yellow: #cc0;
+    --yellow: #ffe600;
     --red: #d00
 }
 
 body {
+    min-height: 100vh;
+    background-color: var(--gray);
     margin: 0px;
     font-size: max(100%, 1.3vw)
 }

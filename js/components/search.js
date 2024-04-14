@@ -28,7 +28,7 @@ export class SearchEngine {
                         localStorage.setItem('foundProducts', JSON.stringify(foundProducts));
     
                         // Navegar para a outra página de produtos
-                        window.location.href = '../../produtos.html';
+                        window.location.href = '../produtos.html';
     
                     } else {
                         window.alert('Sem produtos desse modelo!');
@@ -58,7 +58,7 @@ export class SearchEngine {
                     productElement.classList.add('product_box');
                     
                     console.log(product.image)
-                    let message = `<h2>${product.name}</h2><img src="${product.image}.jpg"><p>R$ ${product.price}</p><p>${product.description}</p>`;
+                    let message = `<img src="${product.image}.jpg"><div><h2>${product.name}</h2><p class="price">R$ ${product.price}</p></div>`;
                     productElement.innerHTML = message;
                     
                     productGrid.appendChild(productElement);
