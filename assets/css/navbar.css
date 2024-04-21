@@ -1,6 +1,7 @@
 .store {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     background-color: var(--yellow);
     height: 25%;
     z-index: 99
@@ -11,7 +12,7 @@
 }
 
 #search {
-    max-width: 50%;
+    width:50%;
 }
 
 .nav-link {

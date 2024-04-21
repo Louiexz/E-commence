@@ -1,0 +1,19 @@
+#featured_grid {
+    display: flex;
+    content: "Destaques:";
+    padding: 5% 2%;
+}
+.featured_box {
+    width: 50%;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    gap: 0px 2%;
+    padding: 5px;
+}
+.sale {
+    font-size: 90%;
+    color: var(--red);
+    text-decoration: line-through;
+}

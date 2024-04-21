@@ -1,0 +1,34 @@
+{
+    "Featured": [
+        {
+            "Cellphones": [
+            {
+                "brand": "Samsung",
+                "models": [
+                {
+                    "name": "Samsung Galaxy S21 FE",
+                    "description": "The Samsung Galaxy S21 is a high-end smartphone with a sleek design and powerful performance. It features a high-resolution camera, large display, and long battery life.",
+                    "sale": 2515.99,
+                    "price": 2215.99,
+                    "image": "assets/imagens/cellphones/samsung/s21.jpg"
+                }
+                ]
+            }
+            ],
+            "Computer": [
+                {
+                "brand": "Dell",
+                "models": [
+                    {
+                    "name": "Notebook Ultraportátil Dell XPS 13",
+                    "description": "The Dell XPS 13 is a high-end laptop with a sleek design and powerful performance. It features a high-resolution display, long battery life, and a lightweight and portable form factor.",
+                    "sale": 6499.99,
+                    "price": 5750.99,
+                    "image": "assets/imagens/computers/dell/xps13.jpg"
+                    }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+  "Eletronics": [
+    {
+      "Cellphones": [
+        {
+          "brand": "Samsung",
+          "models": [
+            {
+              "name": "Samsung Galaxy S21 FE",
+              "description": "O Samsung Galaxy S21 é um smartphone high-end com um design elegante e desempenho poderoso. Ele possui uma câmera de alta resolução, tela grande e bateria de longa duração.",
+              "sale": 2515.99,
+              "price": 2215.99,
+              "image": "assets/imagens/cellphones/samsung/s21.jpg"
+            },
+            {
+              "name": "Samsung Galaxy A52",
+              "description": "O Samsung Galaxy A52 é um smartphone acessível com um conjunto de recursos impressionantes. Possui uma tela grande e nítida, câmera versátil e longa duração da bateria.",
+              "price": 3099.99,
+              "image": "assets/imagens/cellphones/samsung/a52.jpg"
+            }
+          ]
+        },
+        {
+          "brand": "Apple",
+          "models": [
+            {
+              "name": "Apple iPhone 13 Pro",
+              "description": "O iPhone 13 Pro é um dos recentes smartphones da Apple, oferecendo desempenho poderoso, câmeras avançadas e uma tela Super Retina XDR com taxa de atualização ProMotion.",
+              "price": 4099.99,
+              "image": "assets/imagens/cellphones/iphone/iphone13.jpg"
+            },
+            {
+              "name": "Apple iPhone SE",
+              "description": "O iPhone SE oferece a potência do chip A15 Bionic da Apple em um formato compacto e acessível. Possui uma tela Retina HD de 4,7 polegadas e câmera de 12 MP.",
+              "price": 1700.99,
+              "image": "assets/imagens/cellphones/iphone/iphone-se.jpg"
+            }
+          ]
+        },
+        {
+          "brand": "Xiaomi",
+          "models": [
+            {
+              "name": "Xiaomi Mi 11 PRO 5G",
+              "description": "O Xiaomi Mi 11 é um smartphone topo de gama com uma câmara versátil, ecrã AMOLED vibrante e desempenho de topo graças ao processador Snapdragon 888.",
+              "price": 1690.99,
+              "sale": 2550.99,
+              "image": "assets/imagens/cellphones/xiaomi/mi11.png"
+            },
+            {
+              "name": "Xiaomi Redmi Note 10",
+              "description": "O Xiaomi Redmi Note 10 é um smartphone acessível com uma grande tela AMOLED, bateria de longa duração e câmera versátil. É uma ótima opção para quem procura um smartphone económico.",
+              "price": 1099.99,
+              "image": "assets/imagens/cellphones/xiaomi/note10.png"
+            }
+          ]
+        }
+      ],
+      "Computer": [
+        {
+          "brand": "Dell",
+          "models": [
+            {
+              "name": "Notebook Ultraportátil Dell XPS 13",
+              "description": "O Dell XPS 13 é um laptop high-end com um design elegante e desempenho poderoso. Ele possui uma tela de alta resolução, bateria de longa duração e um formato leve e portátil.",
+              "sale": 6499.99,
+              "price": 5750.99,
+              "image": "assets/imagens/computers/dell/xps13.jpg"
+            },
+            {
+              "name": "Notebook Dell Inspiron 15",
+              "description": "O Dell Inspiron 15 é um laptop versátil e acessível com uma variedade de recursos. Ele tem uma tela grande, teclado confortável e uma variedade de portas para conexão com dispositivos externos.",
+              "sale": 3499.99,
+              "price": 2603.99,
+              "image": "assets/imagens/computers/dell/inspiron15.png"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+            
