@@ -1,6 +1,6 @@
-import { LoginController } from './assets/js/components/login.js';
-import { ProductsEngine } from './assets/js/components/products.js';
-import { Result } from './assets/js/components/result.js';
+import { LoginController } from './components/login.js';
+import { ProductsEngine } from './components/products.js';
+import { Result } from './components/result.js';
 
 // Instanciando objetos
 const login = new LoginController();
