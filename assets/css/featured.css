@@ -1,7 +1,8 @@
 #featured_grid {
     display: flex;
     content: "Destaques:";
-    padding: 5% 2%;
+    padding: 5% 1%;
+    flex-wrap: wrap;
 }
 .featured_box {
     width: 50%;

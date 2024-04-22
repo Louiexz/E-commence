@@ -36,9 +36,9 @@ if (!path.endsWith("registro.html")) {
 }
 
 /*
-import { RegisterController } from './pages/register.js';
+import { RegisterController } from 'pages/register.js';
 
-const RegisterController = require('./pages/RegisterController');
+const RegisterController = require('pages/RegisterController');
 
 document.getElementById('register-button').addEventListener('click', () => {
   register.create_user();
