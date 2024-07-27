@@ -1,8 +1,0 @@
-.carousel img {
-    height: 100vh;
-    object-fit: cover;
-}
-
-.sr-only {
-    color: var(--red)
-}

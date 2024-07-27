@@ -1,0 +1,36 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: max(95%, 1.3vw);
+}
+:root {
+    --black: #000;
+    --white: #ddd;
+    --gray: hsl(0, 0%, 81%);
+    --blue: #07bf;
+    --light-blue: #07df;
+    --yellow: #ffe600;
+    --red: #d00;
+}
+body {
+    display: grid;
+    max-height: 100vh;
+    background-color: var(--gray);
+}
+section {
+    margin: 70px 2%;
+}
+a {
+    color: var(--black);
+    text-decoration: none;
+    display: block;
+    clear: both
+}
+.nav-link, #data {
+    margin: 10px;
+}
+.buttons, #sides, footer {
+    display: grid;
+    gap: 20px
+}

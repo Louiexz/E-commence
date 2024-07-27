@@ -1,0 +1,11 @@
+#data {
+    margin: 0% 10%;
+    padding: 5%;
+    background-color: var(--white);
+    min-height: 100vh;
+}
+
+.form-control, label, #area-senha {
+    margin: 1% 5%;
+    width: 90%
+}

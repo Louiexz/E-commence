@@ -1,0 +1,28 @@
+#login {
+    display: none;
+    position: absolute;
+    background-color: var(--gray);
+    top: 80%;
+    right: 0px;
+    padding: 15px;
+    border: solid black 0.01px;
+    border-radius: 6px;
+}
+#text-login {
+    text-align: center;
+}
+button {
+    margin-top: 10px;
+}
+.btn-primary, .btn-primary:hover {
+    background-color: var(--light-blue)
+}
+.btn-primary:active {
+    background-color: var(--blue)
+}
+.buttons {
+    grid-template-columns: auto auto;
+}
+.buttons {
+    justify-content: center
+}

@@ -1,0 +1,24 @@
+.store {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: var(--yellow);
+    height: 70px;
+    width: 100%;
+    z-index: 99
+}
+
+.nav-brand {
+    max-height: 4rem
+}
+
+#search {
+    width:50%;
+}
+
+.nav-link {
+    margin: 5px;
+    color: var(--black);
+    text-decoration: none
+}

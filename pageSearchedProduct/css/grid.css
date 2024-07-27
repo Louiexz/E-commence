@@ -1,0 +1,9 @@
+#product_grid {
+    position: relative;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 33%);
+}
+.price {
+    font-size: 120%;
+}
