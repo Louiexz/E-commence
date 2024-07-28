@@ -14,28 +14,15 @@ document.getElementById('toggle_login').addEventListener('click', () => {
 
 // Caminho do arquivo
 const path = window.location.pathname;
-// Se estiver na página inicial, carrega e mostra os produtos
 
 // Verifica se não está na página registro
-
 if (!path.endsWith("registro.html")) {
-  if (path.endsWith("index.html")) {
-    product.getJson();
-  }
+  product.getJson();
   // Adiciona o evento "Enter" apenas se não estiver na página de registro
   document.getElementById('search').addEventListener('keyup', function(event) {
-    if (event.key === 'Enter') {
-      product.getJson();
-    }
+    if (event.key === 'Enter') { product.getJson(); }
   });
-  result.showProducts();
+  document.addEventListener('DOMContentLoaded', ()=> {
+    result.showProducts();
+  });
 }
-
-/*
-import { RegisterController } from 'pages/register.js';
-
-const RegisterController = require('pages/RegisterController');
-
-document.getElementById('register-button').addEventListener('click', () => {
-  register.create_user();
-});*/

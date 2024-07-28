@@ -1,6 +1,6 @@
 .carousel img {
     padding: 70px 0px 0px 0px;
-    max-height: 100vh;
+    height: 100vh;
 }
 
 .sr-only {

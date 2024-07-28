@@ -1,5 +1,5 @@
 footer {
     padding-top: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, 18%);
     background-color: var(--white);
 }

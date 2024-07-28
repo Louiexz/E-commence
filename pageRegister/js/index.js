@@ -20,11 +20,3 @@ const RegisterController = require('pages/RegisterController');
 document.getElementById('register-button').addEventListener('click', () => {
   register.create_user();
 });*/
-/*
-import { RegisterController } from 'pages/register.js';
-
-const RegisterController = require('pages/RegisterController');
-
-document.getElementById('register-button').addEventListener('click', () => {
-  register.create_user();
-});*/

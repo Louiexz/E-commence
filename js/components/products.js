@@ -12,12 +12,11 @@ export class ProductsEngine {
         }
     }
     getProducts(data) {
-        const featuredProducts = [];
-        let foundProducts = []; 
+        var featuredProducts = [];
+        var foundProducts = []; 
 
         if (data && data.Eletronics && Array.isArray(data.Eletronics) && data.Eletronics.length > 0) {
             const categories = data.Eletronics[0];
-
             for (const categoryKey in categories) {
                 if (categories.hasOwnProperty(categoryKey)) {
                     const category = categories[categoryKey];
@@ -40,16 +39,16 @@ export class ProductsEngine {
     }
 
     getJson() {
+        var localPath = window.location.pathname
         var path = "js/text/products.json"
         var page = 'pageSearchedProduct/searchedProduct.html'
-        if (window.location.pathname.endsWith("index.html") != true) {
-            path = '../../' + path
+        if (localPath.endsWith("searchedProduct.html") || localPath.endsWith("product.html")) {
+            path = './../' + path
         }
-        if (window.location.pathname.endsWith("searchedProduct.html")) {
+        if (localPath.endsWith("searchedProduct.html")) {
             page = 'searchedProduct.html'
-        }
-        else if (window.location.pathname.endsWith("product.html")) {
-            page = '../../pageSearchedProduct/searchedProduct.html'
+        } else if (localPath.endsWith("product.html")) {
+            page = '../pageSearchedProduct/searchedProduct.html'
         }
         fetch(path)
             .then(response => response.json())

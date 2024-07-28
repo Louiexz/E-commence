@@ -1,6 +1,5 @@
 #featured_grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 33%);
+    display: flex
 }
 .featured_box {
     width: 100%;

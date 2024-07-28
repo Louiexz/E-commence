@@ -1,10 +1,9 @@
 #product_box {
-    display: flex;
     background-color: var(--white);
-    overflow: hidden;
-    gap: 30px;
-    padding: 0px 2%;
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 40px 1%;
+    gap: 20px;
 
     h4 {
         font-size: 90%;
@@ -12,9 +11,19 @@
     h4:hover {
         color: cadetblue;
     }
+    img {
+        max-width: 50%;
+    }
 }
-#info {
-    width: 80%;
+@media (max-width:800px) {
+    #product_box{
+        justify-content: center;
+        flex-wrap: wrap;
+
+        img {
+            min-width: 100%;
+        }
+    } 
 }
 .price {
     font-size: 120%;
