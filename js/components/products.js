@@ -2,11 +2,13 @@ export class ProductsEngine {
     constructor() {
         this.searchInput = document.getElementById('search');
     }
-    setLocalStorage(foundProducts, featuredProducts) {
+    setLocalStorage(foundProducts, featuredProducts, categories) {
         if (foundProducts.length > 0) {
             localStorage.setItem('foundProducts', JSON.stringify(foundProducts));
         } else if (featuredProducts.length > 0) {
             localStorage.setItem('featuredProducts', JSON.stringify(featuredProducts));
+        } else if (categories.length > 0) {
+            localStorage.setItem('categoriesProducts', JSON.stringify(categories));
         } else {
             window.alert('Produto não encontrado!');
         }
@@ -14,32 +16,46 @@ export class ProductsEngine {
     getProducts(data) {
         var featuredProducts = [];
         var foundProducts = [];
-        var products = [];
+        var categories = [];
 
         data.forEach(product => {
-            const regex = /"([^"]*)"/g;
-            let match;
-
-            for (const i in product.images) {
-                // Usar exec para encontrar a primeira ocorrência
-                match = regex.exec(product.images[i]);
-                if (match) { product.images[i] = match[1]; }
-            }
-
-            if (featuredProducts.length < 3) {
-                featuredProducts.push(product);
-            } else if (this.searchInput.value !== "" && product.category.name.toLowerCase().includes(this.searchInput.value.toLowerCase())) {
-                products.push(product);
-            }
+            console.log(product.image);
             if (this.searchInput.value != "" && product.title.toLowerCase().includes(this.searchInput.value.toLowerCase())) {
-                foundProducts.push(product); // Adicionamos o modelo à lista foundProducts
-            } else {
-                localStorage.clear(foundProducts)
+                foundProducts.push(product); // Adicionamos o modelo à lista foundProducts}
+            } else if (featuredProducts.length < 3) {
+                featuredProducts.push(product);
+            } else if (this.searchInput.value !== "" && product.category.toLowerCase().includes(this.searchInput.value.toLowerCase())) {
+                categories.push(product);
             }
-            this.setLocalStorage(foundProducts, featuredProducts, products);
+            this.setLocalStorage(foundProducts, featuredProducts, categories);
         });
     }
+    async fetchAndCombineData(path, page) {
+        try {
+            // Fetch a primeira lista de produtos
+            const response1 = await fetch('https://fakestoreapi.com/products');
+            const datas = await response1.json();
+            
+            // Fetch a segunda lista de produtos
+            const response2 = await fetch(path);
+            const products = await response2.json();
+            
+            // Combina as listas de produtos
+            const combinedProducts = datas.concat(products);
+            
+            // Use o resultado combinado conforme necessário
+            this.getProducts(combinedProducts);
 
+            // Verifica a condição e redireciona se necessário
+            if (this.searchInput.value) {
+                window.location.href = page;
+                return; // Saia da função para evitar executar o resto do código
+            }
+    
+        } catch (error) {
+            console.error('Ocorreu um erro ao carregar o JSON:', error);
+        }
+    }
     getJson() {
         var localPath = window.location.pathname
         var path = "js/text/products.json"
@@ -52,16 +68,7 @@ export class ProductsEngine {
         } else if (localPath.endsWith("product.html")) {
             page = '../pageSearchedProduct/searchedProduct.html'
         }
-        fetch('https://api.escuelajs.co/api/v1/products')
-            .then(response => response.json())
-            .then(data => {
-                if (this.searchInput.value) {
-                    window.location.href = page;
-                }
-                this.getProducts(data);
-            })
-            .catch(error => {
-                console.error('Ocorreu um erro ao carregar o JSON:', error);
-            });
+        // Chama a função para executar as operações
+        this.fetchAndCombineData(path, page);        
     }
 }

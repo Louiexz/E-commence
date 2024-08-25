@@ -12,9 +12,16 @@ export class Result {
         products.forEach(product => {
             const productElement = document.createElement('div');
             productElement.classList.add(this.className);
-            
+
+            let imagePath = this.path.endsWith('searchedProduct.html') ||
+                this.path.endsWith('product.html')
+                ? `../${product.image}` : product.image;
+            if (product.image.startsWith('https')) {
+                imagePath = product.image;
+            }
+
             let message = `
-                <img class="product_img" src="${product.images[0]}">
+                <img class="product_img" src="${imagePath}">
                 <div>
                     <h4>${product.title}</h4>
                     ${product.sale ? `<p class="sale">${product.sale}%</p>` : ''}

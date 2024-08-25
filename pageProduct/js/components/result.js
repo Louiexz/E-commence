@@ -4,17 +4,21 @@ export class Result {
     }
 
     showProduct() {
-        const productKey = 'product';
-        const productString = localStorage.getItem(productKey);
+        const productString = localStorage.getItem('product');
     
         if (productString) {
             const product = JSON.parse(productString);
 
             // Set the page title to the product's name
             document.querySelector('title').innerText = product.title;
+
+            let imagePath = product.image;
+            if (!product.image.startsWith('https')) {
+                imagePath = `../${product.image}`;
+            }
     
             // Create the HTML message to display the product
-            let message = `<img class="product_img" src="${product.images[0]}" alt="${product.title}">`;
+            let message = `<img class="product_img" src="${imagePath}" alt="${product.title}">`;
             message += `<div id=info><h3>${product.title}</h3>`;
     
             if (product.sale) {
@@ -31,6 +35,5 @@ export class Result {
             console.error('No product found in localStorage.');
             this.productElement.innerHTML = '<p>Product not found.</p>';
         }
-        localStorage.clear(productKey)
     }
 }

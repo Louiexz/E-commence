@@ -11,19 +11,23 @@
     h4:hover {
         color: cadetblue;
     }
+}
+@media (max-width:4000px) {
     img {
-        max-width: 50%;
+        min-height: 100%;
     }
 }
-@media (max-width:800px) {
+@media (max-width:700px) {
     #product_box{
         justify-content: center;
         flex-wrap: wrap;
-
-        img {
-            min-width: 100%;
-        }
-    } 
+    }
+    img {
+        min-height: 50%;
+    }
+}
+.product_img:hover {
+    transform: scale(1.1);
 }
 .price {
     font-size: 120%;

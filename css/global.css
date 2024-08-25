@@ -34,3 +34,10 @@ a {
     display: grid;
     gap: 20px
 }
+#areaAllProducts {
+   padding: 0% 40%;
+   background-color: var(--gray);
+   button {
+    padding: 5px;
+   }
+}

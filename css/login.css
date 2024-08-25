@@ -1,3 +1,6 @@
+#toggle_login {
+    cursor: pointer;
+}
 #login {
     display: none;
     position: absolute;

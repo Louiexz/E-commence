@@ -8,15 +8,12 @@
     width: 100%;
     z-index: 99
 }
-
 .nav-brand {
     max-height: 4rem
 }
-
 #search {
     width:50%;
 }
-
 .nav-link {
     margin: 5px;
     color: var(--black);
