@@ -13,29 +13,31 @@ export class ProductsEngine {
     }
     getProducts(data) {
         var featuredProducts = [];
-        var foundProducts = []; 
+        var foundProducts = [];
+        var products = [];
 
-        if (data && data.Eletronics && Array.isArray(data.Eletronics) && data.Eletronics.length > 0) {
-            const categories = data.Eletronics[0];
-            for (const categoryKey in categories) {
-                if (categories.hasOwnProperty(categoryKey)) {
-                    const category = categories[categoryKey];
+        data.forEach(product => {
+            const regex = /"([^"]*)"/g;
+            let match;
 
-                    category.forEach(brand => {
-                        brand.models.forEach(model => {
-                            if (model.sale && featuredProducts.length < 3) {
-                                featuredProducts.push(model);
-                            } else if (this.searchInput.value != "" && model.name.toLowerCase().includes(this.searchInput.value.toLowerCase())) {
-                                foundProducts.push(model); // Adicionamos o modelo à lista foundProducts
-                            }
-                        });
-                    });
-                }
+            for (const i in product.images) {
+                // Usar exec para encontrar a primeira ocorrência
+                match = regex.exec(product.images[i]);
+                if (match) { product.images[i] = match[1]; }
             }
-            this.setLocalStorage(foundProducts, featuredProducts);
-        } else {
-            console.error('Erro: Estrutura de dados inválida ou data.Eletronics ausentes.');
-        }
+
+            if (featuredProducts.length < 3) {
+                featuredProducts.push(product);
+            } else if (this.searchInput.value !== "" && product.category.name.toLowerCase().includes(this.searchInput.value.toLowerCase())) {
+                products.push(product);
+            }
+            if (this.searchInput.value != "" && product.title.toLowerCase().includes(this.searchInput.value.toLowerCase())) {
+                foundProducts.push(product); // Adicionamos o modelo à lista foundProducts
+            } else {
+                localStorage.clear(foundProducts)
+            }
+            this.setLocalStorage(foundProducts, featuredProducts, products);
+        });
     }
 
     getJson() {
@@ -50,7 +52,7 @@ export class ProductsEngine {
         } else if (localPath.endsWith("product.html")) {
             page = '../pageSearchedProduct/searchedProduct.html'
         }
-        fetch(path)
+        fetch('https://api.escuelajs.co/api/v1/products')
             .then(response => response.json())
             .then(data => {
                 if (this.searchInput.value) {

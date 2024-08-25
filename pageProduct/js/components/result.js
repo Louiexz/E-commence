@@ -9,16 +9,13 @@ export class Result {
     
         if (productString) {
             const product = JSON.parse(productString);
-    
-            // Log the product information
-            console.log('Product data:', productString, product);
-    
+
             // Set the page title to the product's name
-            document.querySelector('title').innerText = product.name;
+            document.querySelector('title').innerText = product.title;
     
             // Create the HTML message to display the product
-            let message = `<img class="product_img" src="../${product.image}" alt="${product.name}">`;
-            message += `<div id=info><h3>${product.name}</h3>`;
+            let message = `<img class="product_img" src="${product.images[0]}" alt="${product.title}">`;
+            message += `<div id=info><h3>${product.title}</h3>`;
     
             if (product.sale) {
                 message += `<p class="sale">De ${product.sale}% por:</p>`;
@@ -34,5 +31,6 @@ export class Result {
             console.error('No product found in localStorage.');
             this.productElement.innerHTML = '<p>Product not found.</p>';
         }
+        localStorage.clear(productKey)
     }
 }

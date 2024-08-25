@@ -6,22 +6,17 @@ export class Result {
         this.className = 'featured_box';
         this.productGrid = document.getElementById(this.divName);
     }
-
     displayProducts(products) {
         this.productGrid.innerHTML = '';
 
         products.forEach(product => {
             const productElement = document.createElement('div');
             productElement.classList.add(this.className);
-
-            let imagePath = this.path.endsWith('searchedProduct.html') || this.path.endsWith('product.html')
-                ? `../${product.image}`
-                : product.image;
-
+            
             let message = `
-                <img class="product_img" src="${imagePath}">
+                <img class="product_img" src="${product.images[0]}">
                 <div>
-                    <h4>${product.name}</h4>
+                    <h4>${product.title}</h4>
                     ${product.sale ? `<p class="sale">${product.sale}%</p>` : ''}
                     <p class="price">R$ ${product.price}</p>
                 </div>
@@ -43,7 +38,6 @@ export class Result {
             this.productGrid.appendChild(productElement);
         });
     }
-
     showProducts() {
         const productsString = localStorage.getItem(this.list);
 
@@ -61,9 +55,13 @@ export class Result {
             }
         } else {
             this.productGrid.innerHTML = '<p>Nenhum produto encontrado.</p>';
-            setTimeout(() => {
+
+            // Recarregue a página após 1 segundo, se ainda não tiver sido recarregada
+            if (!window.location.pathname.endsWith('ct.html')) {
+                setTimeout(() => {
                 window.location.reload();
-            }, 1000);
+                }, 1000);
+            }
         }
     }
 }
