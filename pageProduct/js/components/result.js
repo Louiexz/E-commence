@@ -8,9 +8,10 @@ export class Result {
     
         if (productString) {
             const product = JSON.parse(productString);
+            console.log(product);
 
-            // Set the page title to the product's name
-            document.querySelector('title').innerText = product.title;
+            // Set the page name to the product's name
+            document.querySelector('#name').innerText = product.name;
 
             let imagePath = product.image;
             if (!product.image.startsWith('https')) {
@@ -18,8 +19,8 @@ export class Result {
             }
     
             // Create the HTML message to display the product
-            let message = `<img class="product_img" src="${imagePath}" alt="${product.title}">`;
-            message += `<div id=info><h3>${product.title}</h3>`;
+            let message = `<img class="product_img" src="${imagePath}" alt="${product.name}">`;
+            message += `<div id=info><h3>${product.name}</h3>`;
     
             if (product.sale) {
                 message += `<p class="sale">De ${product.sale}% por:</p>`;

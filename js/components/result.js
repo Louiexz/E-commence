@@ -23,7 +23,7 @@ export class Result {
             let message = `
                 <img class="product_img" src="${imagePath}">
                 <div>
-                    <h4>${product.title}</h4>
+                    <h4>${product.name}</h4>
                     ${product.sale ? `<p class="sale">${product.sale}%</p>` : ''}
                     <p class="price">R$ ${product.price}</p>
                 </div>

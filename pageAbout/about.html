@@ -5,40 +5,47 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link rel=stylesheet href=../css/style.css>
+        <link rel=stylesheet href=css/style.css>
         
-        <title>Sua Loja - Produtos</title>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <title>Sua Loja</title>
     </head>
     
     <body>
         <nav class="navbar store">
             <a href=../index.html><img src=../imagens/suamarca.png class=nav-brand alt="Sua marca logo"></a>
-            <input type="search" class=form-control id=search placeholder="Pesquise produtos:">
             <div class="navbar item">
-                <a class=nav-link href=../index.html>Início</a>
-                <a class=nav-link href=../pageRegister/registro.html>Registre-se</a>
-                <a class=nav-link id=toggle_login>Entrar</a>
+                <a class=link href=../pageRegister/registro.html>Registre-se</a>
+                <a class=link id=toggle_login>Entrar</a>
             </div>
             <div id="login">
             </div>
         </nav>
-        <section id="product_grid">
+        <section>
+            <div id="desc">
+                <p>Inspirado no Mercado Livre, fake e-commence.</p>
+                <p>Todos os produtos são fictícios.</p>
+                <p>Algumas das imagens foram geradas por IA.</p>
+            </div>
         </section>
         <footer>
             <div class="subtopics brand">
-                <img width=150 src=../imagens/suamarca.png alt="Logo da loja">
-                <span>© 2021</span>
+                <a href=../index.html><img src=../imagens/suamarca.png class=nav-brand alt="Sua marca logo">
+                    <span>© 2024</span></a>
             </div>
             <div class="subtopics home">
                 <h2>Inicio</h2>
-                <a href="../index.html">Home</a>
+                <a href="../index.html" class=link>Home</a>
             </div>
             <div class="subtopics about">
                 <h2>Sobre</h2>
                 <a href="#">Informações da loja</a>
                 <a href="#">Blog</a>
             </div>
-            <div class="subtopics support">
+            <div class="subtopics suport">
                 <h2>Suporte</h2>
                 <a href="#">Contato</a>
             </div>

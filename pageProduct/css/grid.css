@@ -2,7 +2,8 @@
     background-color: var(--white);
     display: flex;
     flex-direction: row;
-    padding: 40px 1%;
+    height: 90dvh;
+    padding: 80px 1%;
     gap: 20px;
 
     h4 {
@@ -27,7 +28,7 @@
     }
 }
 .product_img:hover {
-    transform: scale(1.1);
+    transform: scaleY(1.1);
 }
 .price {
     font-size: 120%;

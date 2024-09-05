@@ -1,8 +1,18 @@
 #product_grid {
     position: relative;
-    padding: 2%;
+    padding: 80px;
     display: grid;
     grid-template-columns: repeat(3, 33%);
+}
+@media (max-width: 4000px) {
+    #product_grid {
+        padding-left: 20%;
+    }
+}
+@media (max-width: 600px) {
+    #product_grid {
+        padding-left: 15%;
+    }
 }
 .price {
     font-size: 120%;

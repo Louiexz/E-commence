@@ -7,7 +7,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel=stylesheet href=css/style.css>
         
-        <title>Sua Loja - Produtos</title>
+        <title id="name">Sua Loja - Produtos</title>
     </head>
     
     <body>
@@ -15,9 +15,9 @@
             <a href=../index.html><img src=../imagens/suamarca.png class=nav-brand alt="Sua marca logo"></a>
             <input type="search" class=form-control id=search placeholder="Pesquise produtos:">
             <div class="navbar item">
-                <a class=nav-link href=../index.html>Início</a>
-                <a class=nav-link href=../pageRegister/registro.html>Registre-se</a>
-                <a class=nav-link id=toggle_login>Entrar</a>
+                <a class=link href=../index.html>Início</a>
+                <a class=link href=../pageRegister/registro.html>Registre-se</a>
+                <a class=link id=toggle_login>Entrar</a>
             </div>
             <div id="login">
             </div>
@@ -26,16 +26,16 @@
         </section>
         <footer>
             <div class="subtopics brand">
-                <img width=150 src=../imagens/suamarca.png alt="Logo da loja">
-                <span>© 2021</span>
+                <a href=../index.html><img src=../imagens/suamarca.png class=nav-brand alt="Sua marca logo">
+                    <span>© 2024</span></a>
             </div>
             <div class="subtopics home">
                 <h2>Inicio</h2>
-                <a href="../index.html">Home</a>
+                <a href="../index.html" class=link>Home</a>
             </div>
             <div class="subtopics about">
                 <h2>Sobre</h2>
-                <a href="#">Informações da loja</a>
+                <a href="../pageAbout/about.html" class=link>Informações da loja</a>
                 <a href="#">Blog</a>
             </div>
             <div class="subtopics suport">

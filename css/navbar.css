@@ -14,8 +14,8 @@
 #search {
     width:50%;
 }
-.nav-link {
-    margin: 5px;
-    color: var(--black);
-    text-decoration: none
+.store {
+    .link {
+        padding: 0px 10px;
+    }
 }
