@@ -4,7 +4,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     background-color: var(--yellow);
-    height: 70px;
+    height: 5rem;
     width: 100%;
     z-index: 99
 }

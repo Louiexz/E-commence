@@ -9,17 +9,18 @@
     --white: #ddd;
     --gray: hsl(0, 0%, 81%);
     --blue: #07bf;
+    --sky: #3483fa;
     --light-blue: #07df;
     --yellow: #ffe600;
     --red: #d00;
 }
-body {
+body, #product_grid, #featured_grid,
+.buttons, #sides, footer {
     display: grid;
-    max-height: 100vh;
-    background-color: var(--gray);
 }
-section {
-    padding: 4rem 2%;
+body {
+    max-height: 100dvh;
+    background-color: var(--gray);
 }
 a {
     color: var(--black);
@@ -28,26 +29,11 @@ a {
     clear: both
 }
 a:hover {
-    color: #3483fa;
+    color: var(--sky);
 }
 #data {
     padding: 10px;
 }
 .buttons, #sides, footer {
-    display: grid;
     gap: 20px
-}
-#areaAllProducts {
-    padding: 30px 2%;
-    padding-bottom: 0px;
-    background-color: var(--gray);
-    font-size: 19px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    button {
-        color: #3483fa;
-        background-color: transparent;
-        border-color: transparent;
-    }
 }
