@@ -27,7 +27,9 @@ export class Result {
             }
             
             message += `<p class="price">R$ ${product.price}</p>`;
-            message += `<p class="desc">${product.description}</p>`;
+            message += `<p class="desc">Description: ${product.description}</p>`;
+            message += `<p>Quantity: ${product.quantity}</p>`
+            message += `<p>Created at: ${product.created_at}</p>`
             message += `<button id=buy>Comprar</button></div>`;
     
             // Update the product element with the message

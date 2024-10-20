@@ -1,87 +1,13 @@
 [
   {
+    "name": "Electronic Fresh Table",
+    "price": 548,
+    "quantity": 9,
+    "description": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+    "created_at": "2034-01-30",
+    "image": "https://loremflickr.com/640/480/abstract",
     "id": 1,
-    "name": "Samsung Galaxy S21 PRO",
-    "sale": 2515.99,
-    "price": 2215.99,
-    "quantity": 421,
-    "description": "O Samsung Galaxy S21 é um smartphone de ponta com um design elegante e desempenho poderoso. Possui uma câmera de alta resolução, tela grande e longa duração da bateria.",
-    "category": "cellphone",
-    "created_at": "2024/05/03",
-    "image": "imagens/cellphones/samsung/s21.jpg"
-  },
-  {
-    "id": 2,
-    "name": "Samsung Galaxy A52",
-    "price": 3099.99,
-    "quantity": 204,
-    "description": "O Samsung Galaxy A52 é um smartphone acessível com um conjunto de recursos impressionantes. Possui uma tela grande e nítida, câmera versátil e longa duração da bateria.",
-    "category": "cellphone",
-    "created_at": "2024/05/03",
-    "image": "imagens/cellphones/samsung/a52.jpg"
-  },
-  {
-    "id": 3,
-    "name": "Apple iPhone 13 Pro",
-    "price": 4099.99,
-    "quantity": 184,
-    "description": "O iPhone 13 Pro é um dos recentes smartphones da Apple, oferecendo desempenho poderoso, câmeras avançadas e uma tela Super Retina XDR com taxa de atualização ProMotion.",
-    "category": "cellphone",
-    "created_at": "2024/05/03",
-    "image": "imagens/cellphones/iphone/iphone13.jpg"
-  },
-  {
-    "id": 4,
-    "name": "Apple iPhone SE",
-    "price": 1700.99,
-    "quantity": 495,
-    "description": "O iPhone SE oferece a potência do chip A15 Bionic da Apple em um formato compacto e acessível. Possui uma tela Retina HD de 4,7 polegadas e câmera de 12 MP.",
-    "category": "cellphone",
-    "created_at": "2024/05/03",
-    "image": "imagens/cellphones/iphone/iphone-se.jpg"
-  },
-  {
-    "id": 5,
-    "name": "Xiaomi Mi 11 PRO 5G",
-    "price": 1690.99,
-    "sale": 2550.99,
-    "quantity": 321,
-    "description": "O Xiaomi Mi 11 é um smartphone topo de gama com uma câmara versátil, ecrã AMOLED vibrante e desempenho de topo graças ao processador Snapdragon 888.",
-    "category": "cellphone",
-    "created_at": "2024/05/03",
-    "image": "imagens/cellphones/xiaomi/mi11.png"
-  },
-  {
-    "id": 6,
-    "name": "Xiaomi Redmi Note 10",
-    "price": 1099.99,
-    "quantity": 234,
-    "description": "O Xiaomi Redmi Note 10 é um smartphone acessível com uma grande tela AMOLED, bateria de longa duração e câmera versátil. É uma ótima opção para quem procura um smartphone económico.",
-    "category": "cellphone",
-    "created_at": "2024/05/03",
-    "image": "imagens/cellphones/xiaomi/note10.png"
-  },
-  {
-    "id": 7,
-    "name": "Notebook Ultraportátil Dell XPS 13",
-    "sale": 6499.99,
-    "price": 5750.99,
-    "quantity": 60,
-    "description": "O Dell XPS 13 é um laptop high-end com um design elegante e desempenho poderoso. Possui uma tela de alta resolução, longa duração da bateria e um fator de forma leve e portátil.",
-    "category": "notebook",
-    "created_at": "2024/05/03",
-    "image": "imagens/computers/dell/xps13.jpg"
-  },
-  {
-    "id": 8,
-    "name": "Notebook Dell Inspiron 15",
-    "sale": 3499.99,
-    "price": 2603.99,
-    "quantity": 120,
-    "description": "O Dell Inspiron 15 é um laptop versátil e acessível com uma variedade de recursos. Ele tem uma tela grande, teclado confortável e uma variedade de portas para conexão com dispositivos externos.",
-    "category": "notebook",
-    "created_at": "2024/05/03",
-    "image": "imagens/computers/dell/inspiron15.png"
+    "category": "chair"
   },
   {
     "name": "Electronic Fresh Table",
@@ -90,7 +16,7 @@
     "description": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
     "created_at": "2034-01-30",
     "image": "https://loremflickr.com/640/480/abstract",
-    "id": 9,
+    "id": 1,
     "category": "chair"
   },
   {
@@ -100,7 +26,7 @@
     "description": "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
     "created_at": "2024-07-08",
     "image": "https://loremflickr.com/640/480/abstract",
-    "id": 10,
+    "id": 2,
     "category": "ergonomic"
   },
   {
@@ -134,6 +60,16 @@
     "category": "keyboard"
   },
   {
+    "name": "Intelligent Steel Sausages",
+    "price": 359,
+    "quantity": 7,
+    "description": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+    "created_at": "2044-02-23",
+    "image": "https://loremflickr.com/640/480/abstract",
+    "id": 12,
+    "category": "keyboard"
+  },
+  {
     "name": "Handcrafted Fresh Sausages",
     "price": 699,
     "quantity": 5,
@@ -154,6 +90,16 @@
     "category": "keyboard"
   },
   {
+    "name": "Practical Bronze Ball",
+    "price": 155,
+    "quantity": 7,
+    "description": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+    "created_at": "2039-01-12",
+    "image": "https://loremflickr.com/640/480/abstract",
+    "id": 14,
+    "category": "keyboard"
+  },
+  {
     "name": "Oriental Wooden Table",
     "price": 752,
     "quantity": 3,
@@ -162,6 +108,16 @@
     "image": "https://loremflickr.com/640/480/abstract",
     "id": 16,
     "category": "ergonomic"
+  },
+  {
+    "name": "Gorgeous Frozen Bacon",
+    "price": 387,
+    "quantity": 7,
+    "description": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+    "created_at": "2011-10-29",
+    "image": "https://loremflickr.com/640/480/abstract",
+    "id": 17,
+    "category": "keyboard"
   },
   {
     "name": "Gorgeous Frozen Bacon",
@@ -244,6 +200,26 @@
     "category": "keyboard"
   },
   {
+    "name": "Modern Wooden Cheese",
+    "price": 208,
+    "quantity": 8,
+    "description": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+    "created_at": "2083-12-28",
+    "image": "https://loremflickr.com/640/480/abstract",
+    "id": 27,
+    "category": "keyboard"
+  },
+  {
+    "name": "Oriental Fresh Pants",
+    "price": 107,
+    "quantity": 6,
+    "description": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+    "created_at": "2055-05-31",
+    "image": "https://loremflickr.com/640/480/abstract",
+    "id": 29,
+    "category": "keyboard"
+  },
+  {
     "name": "Oriental Fresh Pants",
     "price": 107,
     "quantity": 6,
@@ -294,6 +270,16 @@
     "category": "keyboard"
   },
   {
+    "name": "Practical Wooden Pants",
+    "price": 856,
+    "quantity": 2,
+    "description": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+    "created_at": "2043-04-09",
+    "image": "https://loremflickr.com/640/480/abstract",
+    "id": 37,
+    "category": "keyboard"
+  },
+  {
     "name": "Modern Soft Fish",
     "price": 819,
     "quantity": 3,
@@ -302,6 +288,16 @@
     "image": "https://loremflickr.com/640/480/abstract",
     "id": 40,
     "category": "ergonomic"
+  },
+  {
+    "name": "Sleek Bronze Towels",
+    "price": 390,
+    "quantity": 2,
+    "description": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+    "created_at": "2025-03-05",
+    "image": "https://loremflickr.com/640/480/abstract",
+    "id": 42,
+    "category": "chair"
   },
   {
     "name": "Sleek Bronze Towels",
@@ -324,6 +320,26 @@
     "category": "keyboard"
   },
   {
+    "name": "Generic Steel Fish",
+    "price": 919,
+    "quantity": 3,
+    "description": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+    "created_at": "1996-10-15",
+    "image": "https://loremflickr.com/640/480/abstract",
+    "id": 43,
+    "category": "keyboard"
+  },
+  {
+    "name": "Ergonomic Wooden Hat",
+    "price": 933,
+    "quantity": 9,
+    "description": "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
+    "created_at": "2029-04-16",
+    "image": "https://loremflickr.com/640/480/abstract",
+    "id": 44,
+    "category": "natural"
+  },
+  {
     "name": "Ergonomic Wooden Hat",
     "price": 933,
     "quantity": 9,
@@ -341,6 +357,26 @@
     "created_at": "2007-05-18",
     "image": "https://loremflickr.com/640/480/abstract",
     "id": 45,
+    "category": "keyboard"
+  },
+  {
+    "name": "Oriental Frozen Bacon",
+    "price": 390,
+    "quantity": 7,
+    "description": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+    "created_at": "2007-05-18",
+    "image": "https://loremflickr.com/640/480/abstract",
+    "id": 45,
+    "category": "keyboard"
+  },
+  {
+    "name": "Electronic Wooden Soap",
+    "price": 437,
+    "quantity": 8,
+    "description": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+    "created_at": "2072-12-03",
+    "image": "https://loremflickr.com/640/480/abstract",
+    "id": 46,
     "category": "keyboard"
   },
   {
@@ -374,4 +410,3 @@
     "category": "natural"
   }
 ]
-            

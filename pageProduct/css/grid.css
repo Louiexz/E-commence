@@ -1,9 +1,9 @@
 #product_box {
-    background-color: var(--white);
+    background-color: var(--gray);
     display: flex;
     flex-direction: row;
-    height: 90dvh;
-    padding: 80px 1%;
+    min-height: 100dvh;
+    padding: 8rem 1%;
     gap: 20px;
 
     h4 {

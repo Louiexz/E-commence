@@ -26,21 +26,11 @@ export class ProductsEngine {
     }
     async fetchAndCombineData(path, page) {
         try {
-            // Fetch a primeira lista de produtos
-            const response1 = await fetch('https://freetestapi.com/api/v1/products');
-            const datas = await response1.json();
-            
             // Fetch a segunda lista de produtos
             const response2 = await fetch(path);
             const products = await response2.json();
             
-            // Combina as listas de produtos
-            if (datas) {
-                const combinedProducts = products.concat(datas);
-                this.getProducts(combinedProducts);
-            } else {
-                this.getProducts(products);
-            }
+            this.getProducts(products);
             
             // Use o resultado combinado conforme necessário
 

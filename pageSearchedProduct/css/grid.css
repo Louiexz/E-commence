@@ -3,6 +3,19 @@
     padding: 80px;
     display: grid;
     grid-template-columns: repeat(3, 33%);
+    border-radius: 8px;
+
+    .featured_box {
+        padding: 0px 5%;
+    
+        h4 {
+            font-size: 90%;
+        }
+        h4:hover {
+            color: #3483fa;
+        }
+        cursor: pointer;
+    }
 }
 @media (max-width: 4000px) {
     #product_grid {
@@ -11,7 +24,7 @@
 }
 @media (max-width: 600px) {
     #product_grid {
-        padding-left: 15%;
+        padding-left: 10%;
     }
 }
 .price {
